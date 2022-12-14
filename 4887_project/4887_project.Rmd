@@ -1,0 +1,114 @@
+#required package
+```{r}
+library(RJSONIO)
+#install.packages('jsonlite')
+#install.packages('DT')
+#install.packages('imputeTS')
+library(imputeTS)
+library(jsonlite)
+library(plyr)
+library(DT)
+library(dplyr)
+library(data.table)
+ 
+
+```
+
+
+
+```{r}
+#Convert data source format
+json <- fromJSON("C:\\Users\\lohohim\\Downloads\\Housing2122.json")
+
+json <- lapply(json, function(x){
+    x[sapply(x, is.null)] <- NA
+    unlist(x)
+})
+
+dataframe <- as.data.frame(do.call("cbind", json))
+
+table <- data.frame(dataframe)
+
+table
+
+#change date 
+
+
+
+#fill all missing data with 0
+sqcol <- table['sq.']
+sqcol
+
+table[is.na(table)] <- 0
+
+table['sq.'] <- sqcol
+
+table
+
+
+#extract property type
+property <- as.list(table[2])
+
+property <- setDT(table)[, tstrsplit(types, " ")]
+
+property <- property[,c('V2','V3')]
+
+
+
+
+for( i in property['V3']){
+     if(property[,2] == "for"){
+      if(property[,1] == "Room"){
+         property[,1] = "Room"
+      }else if(property[,1] == "Land"){
+        property[,1] = "Land"
+      }else{
+        property[,1] = "Flat"
+      }
+         
+     }
+}
+  
+property <- property[,2]
+
+table[,2] <- property
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#output pre-processed data
+#write.csv(table, "C:\\Users\\lohohim\\homework\\Project_Housing.csv")
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 
+                 
+
+
+
+
+
+
+```
+
