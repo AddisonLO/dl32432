@@ -1,0 +1,5 @@
+/*setting background image and text color */
+#body{
+       background-image: url("Question_mark.jpg");
+	   color: white;
+}

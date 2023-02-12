@@ -1,0 +1,69 @@
+<html>
+<head>
+  <title>Questionnaire</title>
+  <link rel="stylesheet" href="Questionnaire.css"/>
+</head>
+
+<script type="text/javascript" src="Questionaire.js">
+</script>
+<body id="body">
+   
+   
+   <h1 align="center"><b>Questionnaire about the experience of this website</b></h1>
+   <article>
+      <p>This page is used to give comment about the Practicality of this website.<br>
+         There is four question and comment, all the question except the comment are multiple choice question
+      </p>
+   </article>
+   <form align = "center">
+      First name:<input type="text" name="firstname"><br>
+      Last name:<input type="text" name="lastname"><br>
+
+      Gender:<br>
+	  <div id = "Question1" size = "1" required = "required">
+        <input id ="girl" type="radio" name="Q1" value="girl" >Male<br>
+        <input id ="boy" type="radio" name="Q1" value="boy">Female<br>
+      </div>
+      Is the AQHI prediction page easy to read?<br>
+	  <div id = "Question2" size = "1" required = "required">
+        <input id="yes" type="radio" name="Q2" value="nes">Yes<br>
+        <input id="no" type="radio" name="Q2" value="no">No<br>
+      </div>
+	  Is the AQHI advice page easy to read?<br>
+	<div id="Question3" size ="1" required = "required">
+        <input id="easy" type="radio" name="Q3" value="easy">Yes<br>
+        <input id="difficult" type="radio" name="Q3" value="difficult">No<br>
+    </div>
+	  What do you think about the background?<br>
+	<div id="Question4" size = "1" required = "required">
+        <input id="colorful" type="radio" name="Q4" value="colorful">Good<br>
+        <input id="uncolorful" type="radio" name="Q4" value="uncolorful">Bad<br>
+    </div>
+	  Is the format of this questionnaire good?<br>
+	<div id="Question5" size = "1" required = "required">
+        <input id="good" type="radio" name="Q5" value="good">Good<br>
+        <input id="bad" type="radio" name="Q5" value="bad">Bad<br>
+    </div>
+      Comment:<br>
+      <textarea rows="5" cols="100%" maxlength="50">You can explain the reason you choose no in previous question or anything you want to tell us</textarea>
+
+      <br>
+
+      <input type="submit" name="submit" onclick="answer()">Submit</button>
+	  <input type="reset" name="reset" onclick ="this.form.reset()">Reset</button>
+
+    </form>
+	
+	
+
+
+
+   <p>THANK YOU FOR YOUR COMMENT!!!!</p>
+   <button align="center" onclick="location.href='home.html'">BACK</button>
+   
+
+   
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* the stat of the road prediction iframe */
+#road_prediction{
+        display:inline-block;
+		width: 600px;
+		height: 350px;
+}
+/* the stat of the normal prediction iframe */
+#normal_prediction{
+	display:inline-block;
+	width: 600px;
+    height: 350px;
+}
+/*set background image */
+#body{
+    background-image: url("prediction_cloud.jpg");
+}
+/* set the color of the text at the left side */
+#prediction_left{
+	color: white;
+}
+/* set the color of the text at the right side */
+#prediction_right{
+	color: orange;
+}
+/* The setting of the back button */
+#back_button{
+	background-color: white;
+			 color: #00A1C9;
+			 padding: 5px 10px;
+			 text-align: center;
+			 display: inline-block;
+			 font-size: 20px;
+			 margin: 10px 30px;
+			 cursor: pointer;
+			 border-radius: 5px;
+}

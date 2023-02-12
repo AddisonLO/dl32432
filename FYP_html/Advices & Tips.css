@@ -1,0 +1,20 @@
+/* the setting of the back button */
+#back_button{
+	background-color: green;
+			 color: white;
+			 padding: 5px 10px;
+			 text-align: center;
+			 display: inline-block;
+			 font-size: 20px;
+			 margin: 10px 30px;
+			 cursor: pointer;
+			 border-radius: 5px;
+}
+/* setting the background image */
+#body{
+       background-image: url("knowledge.jpg");
+	   color: black;
+	   background-repeat: no-repeat;
+	   
+}
+	  

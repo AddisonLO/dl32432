@@ -1,0 +1,43 @@
+.container{
+	        height: 65%;
+			width: 100%;
+			position: fixed;
+			z-index: ;
+			overflow-x: hidden;
+			
+}
+
+.top{
+	 top: 0;
+	 background-image: url('aboutUsBanner.jpg');
+	
+	 
+}
+
+.bottom{
+	    bottom: 0;
+		background-color: rgba(243, 197, 166);
+		
+}
+
+#purposeParagraph{
+	              font-size: 30px;
+}
+
+#container_addison{
+	                background-color: cyan;
+                    color: purple;
+					border-radius: 10px;
+}
+
+#back_button{
+	          border-radius: 10px;
+			  background-color: orange;
+			  border: none;
+			  
+
+
+	 
+
+
+
